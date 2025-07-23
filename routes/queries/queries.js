@@ -13,6 +13,18 @@ router.get('/', (req, res) => {
     }
 });
 
+router.get('/default', (req, res) => {
+    try {
+        const data = fs.readFileSync('defaultQueries.json', 'utf8');
+        res.status(200).send(data);
+    } catch (err) {
+        if (res.status)
+            console.error(err);
+        res.status(404).send("defaultQueries.json file not found");
+    }
+});
+
+
 router.post('/', (req, res) => {
     const queryArray = req.body;
     const data = JSON.stringify(queryArray, null, 2);
