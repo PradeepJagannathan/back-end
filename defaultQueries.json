@@ -1,0 +1,20 @@
+[
+  {
+    "queryName": "Default_Query_01",
+    "q": "work",
+    "language": "",
+    "pageSize": 10
+  },
+  {
+    "queryName": "Default_Query_02",
+    "q": "Trump",
+    "language": "en",
+    "pageSize": 10
+  },
+  {
+    "queryName": "Default_Query_03",
+    "q": "sports",
+    "language": "en",
+    "pageSize": 10
+  }
+]
