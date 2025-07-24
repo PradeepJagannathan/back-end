@@ -7,7 +7,7 @@ if (!apiKey) {
     process.exit(0);
 }
 
-const baseUrlTop = 'https://newsapi.org/v2/top-headlines';
+const baseUrlTop = 'https://newsapi.org/v2/everything';
 
 export function createUrlFromQueryObject(queryObjectWithApiKey) {
     const queryString = new URLSearchParams(queryObjectWithApiKey).toString();
